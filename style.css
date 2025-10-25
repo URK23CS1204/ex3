@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f6fff6;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #2e7d32;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Banner */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #e8f5e9;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 18px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f1f8e9;
+}
+
+.gallery-item {
+  flex: 1 1 300px;
+  max-width: 30%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.gallery-item .img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(46, 125, 50, 0.8);
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* Content Section */
+.content {
+  padding: 40px 20px;
+}
+
+.content-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.content-box img {
+  flex: 1 1 45%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  opacity: 0.95;
+}
+
+.content-box .text {
+  flex: 1 1 45%;
+}
+
+.content-box h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.content-box.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 14px;
+}
